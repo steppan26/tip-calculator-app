@@ -1,0 +1,36 @@
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-btn-active: hsl(172, 67%, 45%);
+  --clr-btn-inactive: hsl(183, 100%, 15%);
+  --clr-text-primary: hsl(186, 14%, 43%);
+  --clr-bg-input: hsl(184, 14%, 56%);
+  --clr-bg-primary: hsl(185, 41%, 84%);
+  --clr-bg-secondary: hsl(189, 41%, 97%);
+  --clr-white: hsl(0, 0%, 100%)
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #BDE5E8;
+}
+
+h1 {
+  width: 50px;
+  letter-spacing: 0.35em;
+}
+
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: white;
+}
