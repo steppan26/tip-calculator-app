@@ -42,6 +42,16 @@ body {
   background-color: #BDE5E8;
 }
 
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -81,13 +91,12 @@ h5 {
   flex-flow: column nowrap;
   align-items: center;
   min-width: 375px;
-  margin: auto;
+  margin: 2em auto;
   max-width: 540px;
   background-color: white;
   box-shadow: 0 0 20px 1px rgba(10, 10, 10, 0.1);
   padding: 2em;
-  color: var(--clr-text-primary);
-  margin-bottom: 2em;
+  color: var(--clr-text-secondary);
 }
 
 .card-left {
@@ -202,7 +211,7 @@ h5 {
   display: block;
   text-align: center;
   border-radius: 0.2em;
-  padding: 0.4em 0.8em;
+  padding: 0.4em 0.6em;
   font-weight: 700;
 }
 
@@ -220,7 +229,7 @@ h5 {
   }
   .card {
     flex-flow: row nowrap;
-    max-width: 850px;
+    max-width: 700px;
     align-items: stretch;
   }
   .card-right {
