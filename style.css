@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  border: none;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -52,10 +57,6 @@ input:active {
   border: 1px solid var(--clr-text-secondary);
 }
 
-.container {
-  padding: 0 5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -70,6 +71,7 @@ input:active {
 
 h1 {
   letter-spacing: 0.35em;
+  opacity: 0.4;
 }
 
 h5 {
@@ -78,22 +80,30 @@ h5 {
 
 .card {
   display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  min-width: 375px;
+  margin: auto;
+  max-width: 540px;
   background-color: white;
   box-shadow: 0 0 20px 1px rgba(10, 10, 10, 0.1);
   padding: 2em;
   color: var(--clr-text-primary);
+  margin-bottom: 2em;
 }
 
 .card-left {
   text-align: left;
+  width: 100%;
 }
 
 .card-right {
   display: flex;
   flex-flow: column nowrap;
+  width: 100%;
   justify-content: flex-start;
-  margin-left: 2em;
-  padding: 1.5em;
+  margin: 2em 0 0;
+  padding: 1em;
   background-color: var(--clr-btn-inactive);
 }
 
@@ -110,11 +120,12 @@ h5 {
   justify-content: space-between;
   align-items: center;
   text-align: left;
+  margin: 1em 0 0.5em 0;
 }
 
 .display-section h2 {
   color: var(--clr-btn-active);
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: right;
 }
 
@@ -174,7 +185,28 @@ h5 {
 }
 
 .btn-reset {
-  align-self: flex-end;
-  margin-top: auto;
-  padding: 0 10em;
+  margin-top: 2em;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 5rem;
+  }
+  .card {
+    flex-flow: row nowrap;
+    max-width: 850px;
+    align-items: stretch;
+  }
+  .card-right {
+    margin: 0 0 0 2em;
+    justify-content: flex-start;
+  }
+  .display-section h2 {
+    font-size: 2em;
+  }
+  .btn-reset {
+    align-self: flex-end;
+    margin-top: auto;
+  }
 }
