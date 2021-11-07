@@ -82,7 +82,8 @@ h1 {
   opacity: 0.4;
 }
 
-h5 {
+h2 {
+  font-size: 0.8em;
   margin: 0.3em 0;
 }
 
@@ -220,6 +221,8 @@ h5 {
 }
 
 .btn-reset {
+  display: block;
+  width: 100%;
   margin-top: 2em;
 }
 

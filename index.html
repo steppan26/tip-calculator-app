@@ -23,23 +23,23 @@
       <h1>SPLI<br>TTER</h1>
     <div class="card rounded">
       <div class="card-left">
-        <h5>Bill</h5>
+        <h2>Bill</h2>
         <label for="bill-amount-input" class="input-field">
           <i class="fas fa-euro-sign"></i>
           <input type="number" name="bill-amount" id="bill-amount-input" value="50">
         </label>
-        <h5 class="margin-top-2">Select Tip %</h5>
+        <h2 class="margin-top-2">Select Tip %</h2>
         <div class="buttons-wrapper">
           <a href='#' data-value="5" class="btn btn-tip-percentage inactive">5%</a>
           <a href='#' data-value="10" class="btn btn-tip-percentage inactive">10%</a>
           <a href='#' data-value="15" class="btn btn-tip-percentage active">15%</a>
           <a href='#' data-value="25" class="btn btn-tip-percentage inactive">25%</a>
           <a href='#' data-value="50" class="btn btn-tip-percentage inactive">50%</a>
-          <input id="custom-tip-input" type='number' min="0" max="100" href='#' data-value="0" class="btn btn-custom" placeholder="Custom">
+          <input id="custom-tip-input" type='number' min="0" max="100" data-value="0" class="btn btn-custom" placeholder="Custom">
         </div>
         <div>
           <div class="nb-of-people-text">
-            <h5 class="margin-top-2">Number of People</h5><h5 class="error-message">Can't be zero</h5>
+            <h2 class="margin-top-2">Number of People</h2><h2 class="error-message">Can't be zero</h2>
           </div>
           <div class="input-field">
             <i class="fas fa-user-friends"></i>
@@ -63,8 +63,7 @@
           </div>
           <h2 id="display-total">€32.79</h2>
         </div>
-        <label for="reset" class="btn-reset"></label>
-          <a href='#' class="btn active" id="reset">RESET</a>
+          <a href='#' class="btn btn-reset active" id="reset">RESET</a>
       </div>
     </div>
     <div class="attribution">
