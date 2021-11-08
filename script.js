@@ -88,3 +88,4 @@ customTipElement.addEventListener('change', () => {
 })
 
 document.getElementById('reset').addEventListener('click', resetApp)
+ resetApp();
